@@ -76,6 +76,10 @@ export const Items = styled.button`
 
   transition: all 0.2s;
 
+  &:active {
+    scale: 0.8;
+  }
+
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
@@ -124,6 +128,23 @@ export const DivRoute = styled.div`
   box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.3);
   border-radius: 999px;
 
+  button {
+    height: 24px;
+    width: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border: none;
+    color: #fff;
+
+    &:active {
+      scale: 0.9;
+    }
+  }
+
   span {
     font-size: 15px;
     display: flex;
@@ -150,5 +171,5 @@ export const DivMob = styled.span`
   }
 `;
 export const TitleMobile = styled.span`
-  margin-bottom: 20px;
+  margin-top: 20px;
 `;

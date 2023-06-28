@@ -24,7 +24,7 @@ function Home() {
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [isContainerVideoExpanded, setIsContainerVideoExpanded] = useState(false);
-  const [videoUrl, setVideoUrl] = useState( "https://www.youtube.com/watch?v=f54u6ypHst8" );
+  const [videoUrl, setVideoUrl] = useState("https://www.youtube.com/watch?v=f54u6ypHst8");
   const [isSearch, setIsSearch] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const codeRef = useRef(null);
@@ -87,6 +87,7 @@ function Home() {
       </DivMob>
 
       <Swapper>
+
         <LeftItems>
           <ContainerItems>
             <Items className="active" onClick={handleTogglePlay}>
@@ -124,16 +125,16 @@ function Home() {
             </DivNav>
 
             <DivRoute>
-              <Items>
+              <button>
                 <span>Aa</span>
-              </Items>
+              </button>
               <p ref={codeRef}>
                 <IoLockClosed size={16} />
                 {videoUrl}
               </p>
-              <Items>
+              <button>
                 <IoRefresh size={24} />
-              </Items>
+              </button>
             </DivRoute>
 
             <DivNav>
@@ -150,13 +151,13 @@ function Home() {
             </DivNav>
           </Header>
 
-          <ContainerVideo style={{ height: isContainerVideoExpanded ? "540px" : "100%" }}>
+          <ContainerVideo style={{ height: isContainerVideoExpanded ? "660px" : "540px", width: isContainerVideoExpanded ? "1060px" : "960px" }}>
             <ReactPlayer
               url={videoUrl}
               width="100%"
               height="100%"
               playing={isPlaying}
-              controls={false}
+              controls={true}
             />
           </ContainerVideo>
         </Main>
