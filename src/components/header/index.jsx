@@ -12,14 +12,7 @@ import {
 import { BsLayoutSidebar } from "react-icons/bs";
 
 function ContainerHeader(props) {
-
-  const {
-    videoUrl,
-    isCopied,
-    codeRef,
-    HandleVideoBackOrGo,
-    HandleCopyCode,
-  } = props;
+  const { videoUrl, isCopied, codeRef, HandleVideoBackOrGo, HandleCopyCode } = props;
 
   return (
     <Header>
@@ -65,8 +58,3 @@ function ContainerHeader(props) {
 }
 
 export default ContainerHeader;
-
-
-/*
-
-*/

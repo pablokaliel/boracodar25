@@ -19,6 +19,11 @@ export const ContainerItems = styled.div`
   box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0.1);
 
+  @media (max-width: 900px) {
+    flex-direction: row;
+    margin-top: 24px;
+  }
+
   .search {
     position: absolute;
     bottom: 0;

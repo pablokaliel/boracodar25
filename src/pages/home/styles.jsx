@@ -14,8 +14,11 @@ export const Swapper = styled.div`
   display: flex;
   margin-top: 120px;
 
-  @media (max-width: 1024px) {
-    display: none;
+  @media (max-width: 900px) {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
   }
 `;
 
@@ -24,29 +27,27 @@ export const Main = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-`;
 
-export const ContainerVideo = styled.div`
-  width: 100%;
-
-  border-radius: 32px;
-  border: 0.2px solid #fff;
-  overflow: hidden;
-`;
-
-export const DivMob = styled.span`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0 20px;
-
-  @media (min-width: 1025px) {
-    display: none;
+  @media (max-width: 900px) {
+    order: -1;
+    width: 90%;
   }
 `;
 
-export const TitleMobile = styled.span`
-  margin-top: 20px;
+export const ContainerVideo = styled.div`
+  width: 960px;
+  height: 540px;
+  border-radius: 32px;
+  overflow: hidden;
+
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+
+  @media (max-width: 900px) {
+    width: 90%;
+    height: 450px;
+  }
 `;

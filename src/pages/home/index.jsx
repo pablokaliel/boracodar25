@@ -1,18 +1,11 @@
-import {
-  Container,
-  Swapper,
-  Main,
-  ContainerVideo,
-  TitleMobile,
-  DivMob,
-} from "./styles";
-
-import { BiMessageError } from "react-icons/bi";
+import { Container, Swapper, Main, ContainerVideo } from "./styles";
 
 import ReactPlayer from "react-player";
 import { useVideoFunctions } from "../../hook/UseVideoFunctions";
 import ContainerLeftItems from "../../components/containerLeftItems";
 import ContainerHeader from "../../components/header";
+
+import videomp4 from '../../assets/fluid.mp4';
 
 function Home() {
 
@@ -34,13 +27,6 @@ function Home() {
 
   return (
     <Container>
-      <DivMob>
-        <BiMessageError size={58} color="#ff0000" />
-        <TitleMobile>
-          Para uma melhor experiência, utilize uma tela maior.
-        </TitleMobile>
-      </DivMob>
-
       <Swapper>
         <ContainerLeftItems
           isPlaying={isPlaying}
@@ -69,8 +55,8 @@ function Home() {
 
           <ContainerVideo
             style={{
-              height: isContainerVideoExpanded ? "660px" : "540px",
-              width: isContainerVideoExpanded ? "1060px" : "960px",
+              height: isContainerVideoExpanded ? "100%" : "540px",
+              width: isContainerVideoExpanded ? "1060px" : "100%",
             }}
           >
             <ReactPlayer
@@ -79,6 +65,7 @@ function Home() {
               height="100%"
               playing={isPlaying}
               controls={true}
+              style={{ objectFit: "cover" }}
             />
           </ContainerVideo>
         </Main>
@@ -88,4 +75,3 @@ function Home() {
 }
 
 export default Home;
-

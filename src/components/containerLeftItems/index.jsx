@@ -9,7 +9,6 @@ import {
 } from "react-icons/io5";
 
 function ContainerLeftItems(props) {
-  
   const {
     isPlaying,
     isSearch,
@@ -18,7 +17,6 @@ function ContainerLeftItems(props) {
     HandleTogglePlay,
     HandleExpandContainerVideo,
   } = props;
-
   return (
     <LeftItems>
       <ContainerItems>
@@ -45,3 +43,4 @@ function ContainerLeftItems(props) {
 }
 
 export default ContainerLeftItems;
+

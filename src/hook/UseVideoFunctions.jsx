@@ -1,7 +1,6 @@
-import { useState, useRef } from 'react';
+import { useState, useRef } from "react";
 
 export const useVideoFunctions = () => {
-
   const [isPlaying, setIsPlaying] = useState(false);
   const [isContainerVideoExpanded, setIsContainerVideoExpanded] = useState(false);
   const [videoUrl, setVideoUrl] = useState("https://www.youtube.com/watch?v=cbSHUVSUFgY");
@@ -16,6 +15,7 @@ export const useVideoFunctions = () => {
     "https://www.youtube.com/watch?v=8dkwk6d8vdY",
     "https://www.youtube.com/watch?v=vqzbgXeMEnU",
     "https://www.youtube.com/watch?v=isn44MT-aIQ",
+    "https://www.youtube.com/watch?v=uL6nu0-zhu0&feature=youtu.be",
   ];
 
   const HandleVideoBackOrGo = (isForward) => {

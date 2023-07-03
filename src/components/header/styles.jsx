@@ -5,6 +5,10 @@ export const DivNav = styled.div`
   gap: 16px;
   position: relative;
 
+  @media (max-width: 900px) {
+    display: none;
+  }
+
   .copy {
     position: absolute;
     bottom: -12px;
@@ -20,6 +24,11 @@ export const DivRoute = styled.div`
 
   width: 440px;
   height: 48px;
+
+  @media (max-width: 900px) {
+    width: inherit;
+    /* flex:1; */
+  }
 
   padding: 16px 12px;
   gap: 16px;
@@ -84,6 +93,10 @@ export const Items = styled.button`
 
 export const Header = styled.div`
   height: 64px;
+
+  @media (max-width: 900px) {
+    width: 98%;
+  }
 
   display: flex;
   align-items: center;
