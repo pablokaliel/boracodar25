@@ -17,7 +17,7 @@ O Desafio consiste em reproduzir o layout de uma versão web para uma experiênc
 <br>
 
 <p align="center">
-  <img src="https://github.com/pablokaliel/boracodar-23/assets/104238801/8da24400-76a4-4079-8991-d0ded5df2bbf" width="100%">
+  <img src="https://github.com/pablokaliel/boracodar25/assets/104238801/202f87e7-301a-4028-a89d-4091eaaa411c" width="100%">
 </p>
 
 ## 🚀 Tecnologias
