@@ -38,12 +38,17 @@ export const ContainerVideo = styled.div`
   width: 960px;
   height: 540px;
   border-radius: 32px;
-  overflow: hidden;
+  position: relative;
 
-  video{
+  .ambient{
+    position: absolute;
+    top:0;
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    border-radius:inherit;
+    scale: 1.2;
+    z-index:-1;
+    filter:blur(100px) opacity(0.5) saturate(300%);
   }
 
   @media (max-width: 900px) {

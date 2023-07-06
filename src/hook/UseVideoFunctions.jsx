@@ -3,19 +3,16 @@ import { useState, useRef } from "react";
 export const useVideoFunctions = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isContainerVideoExpanded, setIsContainerVideoExpanded] = useState(false);
-  const [videoUrl, setVideoUrl] = useState("https://www.youtube.com/watch?v=cbSHUVSUFgY");
+  const [videoUrl, setVideoUrl] = useState("https://www.youtube.com/watch?v=qC0vDKVPCrw");
   const [isSearch, setIsSearch] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const codeRef = useRef(null);
 
   const videoUrls = [
-    "https://www.youtube.com/watch?v=cbSHUVSUFgY",
-    "https://www.youtube.com/watch?v=Hq4cIzdS50A",
-    "https://www.youtube.com/watch?v=zOhmskMoFA4",
-    "https://www.youtube.com/watch?v=8dkwk6d8vdY",
-    "https://www.youtube.com/watch?v=vqzbgXeMEnU",
-    "https://www.youtube.com/watch?v=isn44MT-aIQ",
-    "https://www.youtube.com/watch?v=uL6nu0-zhu0&feature=youtu.be",
+    "https://www.youtube.com/watch?v=qC0vDKVPCrw",
+    "https://www.youtube.com/watch?v=Gt6wKDnG0xA",
+    "https://www.youtube.com/watch?v=os19tQVAGZk",
+    "https://www.youtube.com/watch?v=knHGZF6-8rc"
   ];
 
   const HandleVideoBackOrGo = (isForward) => {

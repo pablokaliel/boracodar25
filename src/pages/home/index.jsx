@@ -5,10 +5,7 @@ import { useVideoFunctions } from "../../hook/UseVideoFunctions";
 import ContainerLeftItems from "../../components/containerLeftItems";
 import ContainerHeader from "../../components/header";
 
-import videomp4 from '../../assets/fluid.mp4';
-
 function Home() {
-
   const {
     isPlaying,
     isContainerVideoExpanded,
@@ -59,13 +56,22 @@ function Home() {
               width: isContainerVideoExpanded ? "1060px" : "100%",
             }}
           >
+            <div style={{width:"100%", height:"100%", borderRadius:"30px", overflow:"hidden"}}>
             <ReactPlayer
               url={videoUrl}
               width="100%"
               height="100%"
               playing={isPlaying}
-              controls={true}
-              style={{ objectFit: "cover" }}
+              controls={false}
+            />
+            </div>
+            <ReactPlayer
+              className="ambient"
+              url={videoUrl}
+              width="100%"
+              height="100%"
+              playing={isPlaying}
+              controls={false}
             />
           </ContainerVideo>
         </Main>
@@ -75,3 +81,7 @@ function Home() {
 }
 
 export default Home;
+
+/*
+06,11,14,17,20,25,26
+*/
