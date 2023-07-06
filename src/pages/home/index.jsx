@@ -56,7 +56,7 @@ function Home() {
               width: isContainerVideoExpanded ? "1060px" : "100%",
             }}
           >
-            <div style={{width:"100%", height:"100%", borderRadius:"30px", overflow:"hidden"}}>
+            <div style={{width:"100%", height:"100%", borderRadius:"30px",}}>
             <ReactPlayer
               url={videoUrl}
               width="100%"
@@ -81,7 +81,3 @@ function Home() {
 }
 
 export default Home;
-
-/*
-06,11,14,17,20,25,26
-*/
